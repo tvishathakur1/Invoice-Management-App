@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Provider } from 'react-redux';
 import theme from '../src/utils/theme';
-import { withStyles, MuiThemeProvider } from '@material-ui/core/styles';
+import {ThemeProvider } from '@mui/material/styles';
 ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <App />
-    </MuiThemeProvider>,
+    </ThemeProvider>,
   document.getElementById('root')
 );
 serviceWorker.unregister();

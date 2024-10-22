@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import theme from '../src/utils/theme';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
 import CollectorDashboard from '../src/views/CollectorDashboard';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import { ROLL_NUMBER } from '../src/utils/constants';
 
 const useStyles = makeStyles((theme) => ({
@@ -40,7 +40,9 @@ const App = () => {
   return (
     <div className={classes.mainBackground}>
       <Router basename={`/${ROLL_NUMBER}`}>
+      <Routes>
         <Route exact path="/" component={CollectorDashboard} />
+      </Routes>
       </Router>
     </div>
   );

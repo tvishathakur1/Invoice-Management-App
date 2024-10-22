@@ -1,8 +1,8 @@
 import React from 'react';
-import Paper from '@material-ui/core/Paper';
+import Paper from '@mui/material/Paper';
 import theme, { pxToRem } from '../utils/theme';
-import { withStyles } from '@material-ui/core/styles';
-import { Typography, Grid } from '@material-ui/core';
+import { withStyles } from '@mui/styles';
+import { Typography, Grid } from '@mui/material';
 
 const styles = theme => ({
   mainBackground: {

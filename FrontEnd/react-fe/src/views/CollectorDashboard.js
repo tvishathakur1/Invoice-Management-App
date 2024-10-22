@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
 import theme, { pxToVh } from '../utils/theme';
-import { makeStyles, Paper, rgbToHex } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
+import { Paper, rgbToHex } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import Grid from '@mui/material/Grid';
 import Footer from '../components/Footer';
-import { Typography } from '@material-ui/core';
-import { InputBase, TextField, OutlinedInput, Button } from '@material-ui/core';
+import { InputBase, TextField, OutlinedInput, Button } from '@mui/material/';
 import CollectorStyle from './CollectorStyle.css';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import { fade } from '@material-ui/core/styles/colorManipulator';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+import { alpha } from '@mui/material/styles';
 import SimpleTable from '../components/Table.js';
 import CustomizedInputBase from '../components/Searchbar.js';
 import CustomizedDialogDemo from '../components/Deletebutton.js';
@@ -84,9 +77,9 @@ const useStyles = makeStyles(() => ({
     color: '#97A1A9',
     opacity: 1,
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
+      backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
     marginRight: theme.spacing.unit * 2,
     marginLeft: 0,
