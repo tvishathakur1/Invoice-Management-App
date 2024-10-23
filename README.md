@@ -70,5 +70,7 @@ The application follows the MVC (Model-View-Controller) architecture, which sepa
 
 ![MVC Architecture Diagram](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*y8Z4MgBS_s8d4o26arDJ4w.png)
 
+<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*y8Z4MgBS_s8d4o26arDJ4w.png" alt="MVC Diagram" width="500" height="300">
+
 ## Conclusion
 The Invoice Management Application is a comprehensive solution for businesses looking to streamline their invoicing processes. With the use of modern technologies like React and Java Servlets, along with robust frameworks such as Struts, Spring, and Hibernate, this application is designed to be efficient, reliable, and user-friendly.
