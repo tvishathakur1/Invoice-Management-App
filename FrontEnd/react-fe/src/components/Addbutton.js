@@ -11,7 +11,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import InputLabel from '@mui/material/InputLabel';
-import { Grid } from '@mui/material';
+import { Grid2 } from '@mui/material';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 import MaterialUIPickers from './DatePicker.js'
 
@@ -152,8 +152,8 @@ export default function AddDialog() {
           Add Invoice
         </DialogTitle>
         <DialogContent>
-          <Grid container className={classes.dialogContainer}>
-            <Grid item lg={4}>
+          <Grid2 container className={classes.dialogContainer}>
+            <Grid2 item lg={4}>
               <InputLabel style={{ color: 'white' }}>Customer Name</InputLabel>
               <TextField
                 id="outlined-InvoiceAmount"
@@ -207,14 +207,14 @@ export default function AddDialog() {
               //onChange={handleInputChange}
               //error={errors.mobile}
               />
-            </Grid>
-            <Grid item lg={4}>
+            </Grid2>
+            <Grid2 item lg={4}>
               <InputLabel style={{ color: 'white' }}>Due Date</InputLabel>
               <MaterialUIPickers />
               <InputLabel style={{ color: 'white' }}>Notes</InputLabel>
               <TextareaAutosize style={{ width: '200px' }} aria-label="minimum height" rowsMin={17} placeholder="Enter notes here" />
-            </Grid>
-          </Grid>
+            </Grid2>
+          </Grid2>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary" variant="contained">
