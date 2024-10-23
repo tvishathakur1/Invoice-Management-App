@@ -41,7 +41,7 @@ const App = () => {
     <div className={classes.mainBackground}>
       <Router basename={`/${ROLL_NUMBER}`}>
       <Routes>
-        <Route exact path="/" element={<CollectorDashboard/>} />
+        <Route path="/" element={<CollectorDashboard />} />
       </Routes>
       </Router>
     </div>
