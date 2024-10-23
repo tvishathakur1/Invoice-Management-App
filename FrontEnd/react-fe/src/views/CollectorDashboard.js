@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import theme, { pxToVh } from '../utils/theme';
 import { Paper, rgbToHex } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Grid2';
 import Footer from '../components/Footer';
 import { InputBase, TextField, OutlinedInput, Button } from '@mui/material/';
 import CollectorStyle from './CollectorStyle.css';
@@ -178,28 +178,28 @@ const CollectorDashboard = () => {
         root: classes.root, 
       }}>
         <div className={classes.buttondiv}>
-          <Grid container styles={{
+          <Grid2 container styles={{
 display: 'flex',
 justifyItems: 'flex-start',
 //alignItems: 'center',
 }}>
-            <Grid item xs={1}>
+            <Grid2 item xs={1}>
           <Button variant="outlined" href="#outlined-buttons" className={classes.button}>
             Predict
           </Button>
-          </Grid>
-          <Grid item  xs={2}><ViewCorrespondance /></Grid>
+          </Grid2>
+          <Grid2 item  xs={2}><ViewCorrespondance /></Grid2>
          
-         <Grid item xs={3}><AddDialog /></Grid>
+         <Grid2 item xs={3}><AddDialog /></Grid2>
           
-          <Grid item xs={1}><FormDialog /></Grid>
+          <Grid2 item xs={1}><FormDialog /></Grid2>
           
-          <Grid item xs={2}><CustomizedDialogDemo /></Grid>
+          <Grid2 item xs={2}><CustomizedDialogDemo /></Grid2>
           
           
-          <Grid item xs={3}><CustomizedInputBase /></Grid>
+          <Grid2 item xs={3}><CustomizedInputBase /></Grid2>
           
-          </Grid>
+          </Grid2>
         </div>
         <div >
           <SimpleTable />
