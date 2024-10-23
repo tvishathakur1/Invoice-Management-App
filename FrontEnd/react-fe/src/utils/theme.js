@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 
 
 export const pxToRem = px => `${px / 22.5}rem`;
@@ -8,7 +8,7 @@ export const pxToVw = px =>
 export const pxToVh = px =>
   `${px / (document.documentElement.clientHeight * 0.01)}vh`;
 
-export default createMuiTheme({
+export default createTheme({
   palette: {
     primary: {
       main: '#1B1F38',
